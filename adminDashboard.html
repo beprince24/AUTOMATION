@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - AI Automation Meeting Alerter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="adminContainer">
+        <h2>Admin Dashboard</h2>
+
+        <div>
+            <h3>Schedule a Meeting</h3>
+            <input type="text" id="participantEmail" placeholder="Enter User ID">
+            <input type="datetime-local" id="meetingTime">
+            <button id="scheduleButton">Schedule Meeting</button>
+            <button id="autoScheduleButton">AI Auto-Schedule Meeting</button>
+        </div>
+
+        <div id="meetingResponses">
+            <h3>Meeting Responses</h3>
+            <!-- Meeting responses (accepted/rejected) will be displayed here -->
+        </div>
+
+        <button id="usedEmailsButton">Show Used User IDs</button>
+        <div id="usedEmailsList" class="hidden"></div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
+
